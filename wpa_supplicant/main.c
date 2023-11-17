@@ -180,6 +180,10 @@ static int wpa_supplicant_init_match(struct wpa_global *global)
 
 int main(int argc, char *argv[])
 {
+    if (true) {
+        wpa_printf(MSG_WARNING, "wpa_supplicant do nothing");
+        return 0;
+    }
 	int c, i;
 	struct wpa_interface *ifaces, *iface;
 	int iface_count, exitcode = -1;
